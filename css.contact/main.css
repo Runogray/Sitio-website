@@ -1,0 +1,426 @@
+@media only screen and (min-width: 920px) {
+  body {
+    font-family: "Libre Baskerville", "Inter";
+    background-color: rgb(255, 255, 255);
+    margin: 5.5em;
+    height: 120em;
+  }
+  .menu {
+    display: none;
+  }
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(243, 243, 243, 0.806);
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0% 5% 0% 5%;
+    background-size: contain;
+    background-position-x: 20%;
+    background-position-y: 20%;
+    width: 90%;
+    height: 12vh;
+    background-position-x: 20%;
+    background-position-y: 20%;
+    width: 90%;
+  }
+  nav {
+    transform: translateX(0);
+    position: unset;
+    display: block;
+    width: auto;
+    height: auto;
+    background: none;
+  }
+  nav .close {
+    display: none;
+  }
+  a {
+    color: rgb(0, 0, 0);
+    padding: 2.5em 1.5em;
+    font-family: "Inter";
+    font-size: 0.9rem;
+    text-decoration: none;
+  }
+  a:hover {
+    -webkit-text-decoration: #3f59ed;
+            text-decoration: #3f59ed;
+    text-decoration-line: underline;
+    text-decoration-thickness: 0.14em;
+  }
+  .primary-cta {
+    background-color: #3405E1;
+    background-blend-mode: color-burn;
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: white;
+    text-decoration: none;
+    border-radius: 1em;
+    padding: 0.6em 1.6em 0.6em 1.6em;
+    font-family: "Inter";
+    margin: 2em 1.2em;
+    width: 5.5em;
+  }
+  .primary-cta:hover {
+    background-color: #000000;
+    text-decoration: none;
+  }
+  ul {
+    display: flex;
+    list-style: none;
+  }
+  ul .active {
+    font-size: 0.8em;
+    font-weight: 700;
+    color: #393939;
+  }
+  .black-logo {
+    margin-top: 1em;
+  }
+  .contact-form {
+    margin-top: 10em;
+    width: 100%;
+    height: 10vh;
+    margin-bottom: 0.8em;
+  }
+  .contact-form .h1 {
+    font-size: 1.8em;
+  }
+  form {
+    width: 100%;
+    max-width: 600px;
+  }
+  form .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  form .row .input-group {
+    flex-basis: 48%;
+  }
+  form .input-group {
+    margin-bottom: 40px;
+    position: relative;
+  }
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #515151;
+    color: rgb(0, 0, 0);
+    background: transparent;
+    font-size: 15px;
+    border-radius: 0.4em;
+  }
+  .label1 {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #000000;
+    cursor: text;
+    transition: 0.3s;
+  }
+  i {
+    margin-right: 0.8em;
+  }
+  button {
+    margin-top: 2em;
+    padding: 12px 0;
+    color: rgb(250, 250, 250);
+    outline: none;
+    background: rgb(63, 14, 224);
+    border: 1px solid rgb(255, 255, 255);
+    width: 12%;
+    border-radius: 1.2em;
+    font-size: 1em;
+    cursor: pointer;
+  }
+  input:focus ~ label,
+  input:valid ~ label,
+  textarea:focus ~ label,
+  textarea:valid ~ label {
+    top: -35px;
+    font-size: 12px;
+    color: rgb(78, 78, 78);
+  }
+  .H2 {
+    margin-top: 0.2em;
+  }
+  .H2 .main-text {
+    font-size: 1.2em;
+    line-height: 0.2em;
+  }
+  .H2 .body-text {
+    font-size: 1em;
+    line-height: 1.4em;
+    color: #393939;
+  }
+  .wrapper {
+    margin-top: 0.2em;
+  }
+  .container {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    width: 200px;
+    padding: 2px 30px 1px 12px;
+    border: 1.5px solid rgb(87, 86, 86);
+    border-radius: 8px;
+    background-color: #f8f7fe;
+  }
+  .container:hover {
+    background-color: #e0dff8;
+  }
+  .container .row {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 1em;
+    margin: 1px 0;
+    font-size: 16px;
+  }
+  .container .label2 {
+    position: relative;
+    width: 25px;
+    height: 25px;
+  }
+  .container .input {
+    width: 45%;
+    height: 45%;
+    position: absolute;
+    opacity: 0;
+  }
+  span {
+    display: block;
+    width: 60%;
+    height: 60%;
+    position: absolute;
+    border: 3px solid rgb(71, 71, 244);
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  span::after {
+    content: "";
+    position: absolute;
+    left: 4.5px;
+    bottom: 4px;
+    width: 0px;
+    height: 0px;
+    border: solid rgb(20, 75, 192);
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+    opacity: 0;
+    transition: width 0.5s, height 0.5s, opacity 0.5s;
+  }
+  input:checked ~ span::after {
+    width: 5px;
+    height: 10px;
+    opacity: 1;
+  }
+  .contact- {
+    margin-top: 8em;
+  }
+  .contact- .cnt {
+    font-size: 1.2em;
+  }
+  .contact- .contact_ {
+    margin-top: 3em;
+  }
+  .contact- .contact_ .mail {
+    font-size: 2.4em;
+    line-height: 0.2em;
+  }
+  .contact- .contact_ .no {
+    font-size: 2em;
+    line-height: 0.2em;
+  }
+  .footer {
+    margin-left: 5em;
+    position: absolute;
+    background-size: cover;
+    background-position-x: 20%;
+    background-position-y: 40%;
+    background-image: url(/Sito-Images/footerbackground\(web\).svg);
+    height: 13vh;
+    width: 87%;
+    border-radius: 1em;
+    top: -4em;
+    display: flex;
+    padding-top: 1em;
+    padding-bottom: 1em;
+  }
+  .footer .left {
+    color: white;
+    margin-left: 2.5em;
+  }
+  .footer .left .text .h1 {
+    font-size: 1.2em;
+    line-height: 0.8em;
+  }
+  .footer .left .feature {
+    display: flex;
+    justify-content: space-between;
+    gap: 2em;
+  }
+  .footer .left .feature .t1 {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.3em;
+    margin-top: 0em;
+  }
+  .footer .left .feature .t1 .text {
+    font-size: 0.7em;
+    line-height: 0.1em;
+  }
+  .footer .left .feature .t1 .svg {
+    margin-top: 0.3em;
+  }
+  .footer .right {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2.2em;
+    margin-left: 16em;
+  }
+  .footer .right .primary-ctb {
+    background-color: #000000;
+    background-blend-mode: color-burn;
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: white;
+    text-decoration: none;
+    border-radius: 1em;
+    padding: 0.6em 1.6em 0.6em 1.6em;
+    font-family: "Inter";
+    margin: 2em 1.2em;
+    width: 5.5em;
+  }
+  .footer .right .primary-ctb:hover {
+    color: #afabff;
+    text-decoration: none;
+  }
+  .footer .right .secondary-cta {
+    background-color: #ffffff;
+    background-blend-mode: color-burn;
+    font-size: 0.9rem;
+    font-weight: normal;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    border-radius: 1em;
+    padding: 0.6em 1.6em 0.6em 1.6em;
+    font-family: "Inter";
+    margin: 2em 1.2em;
+    width: 5.5em;
+  }
+  .footer .right .secondary-cta:hover {
+    color: #afabff;
+    text-decoration: none;
+  }
+  section.black-footer {
+    background-color: #000000;
+    position: absolute;
+    top: 123em;
+    left: unset;
+    right: 0;
+    width: 100%;
+    z-index: -1;
+    background-size: cover;
+    background-position-x: 20%;
+    background-position-y: 40%;
+    height: 82vh;
+  }
+  section.black-footer .section1 {
+    margin-top: 6em;
+    margin-left: 4em;
+  }
+  section.black-footer .section2 {
+    margin-top: 2em;
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    margin-left: 4em;
+    margin-right: 10em;
+  }
+  section.black-footer .section2 .left {
+    display: flex;
+    justify-content: space-between;
+    gap: 3em;
+    color: white;
+  }
+  section.black-footer .section2 .left .tex1 {
+    margin-left: 0.8em;
+  }
+  section.black-footer .section2 .left .tex1 .h1 {
+    display: flex;
+    gap: 0.2em;
+    margin-left: 0.4em;
+  }
+  section.black-footer .section2 .left .tex1 .h1 .txt {
+    line-height: 0em;
+    font-size: 1em;
+  }
+  section.black-footer .section2 .left .tex1 .wrapper {
+    text-align: left;
+    margin-left: 0.9em;
+    color: rgb(231, 231, 231);
+  }
+  section.black-footer .section2 .left .tex1 .wrapper .tx1 {
+    font-size: 0.8em;
+  }
+  section.black-footer .section2 .right {
+    margin-top: 1em;
+  }
+  section.black-footer .section2 .right .social .text {
+    margin-top: 0em;
+    font-size: 0.8em;
+    line-height: 0.2em;
+  }
+  section.black-footer .section2 .right .social .icon {
+    margin-top: 2em;
+    display: flex;
+    gap: em;
+  }
+  section.black-footer .section2 .right .social .icon .ic {
+    padding: 0em;
+  }
+  section.black-footer .section2 .right .contact {
+    margin-top: 4em;
+  }
+  section.black-footer .section2 .right .contact .mail {
+    font-size: 1.2em;
+    line-height: 0.1em;
+  }
+  section.black-footer .section2 .right .contact .no {
+    font-size: 1em;
+    line-height: 0.3em;
+  }
+  section.black-footer .section3 {
+    margin-top: 3.6em;
+  }
+  section.black-footer .section3 .footer-end {
+    text-align: center;
+    margin-left: 5.5em;
+    margin-right: 5.5em;
+    color: rgb(219, 219, 219);
+    display: flex;
+    justify-content: space-between;
+  }
+  section.black-footer .section3 .footer-end .left {
+    display: flex;
+    gap: 1em;
+    font-size: 0.7em;
+    font-weight: lighter;
+  }
+  section.black-footer .section3 .footer-end .right {
+    display: flex;
+    gap: 0.3em;
+  }
+  section.black-footer .section3 .footer-end .right .svg {
+    margin-top: 0.65em;
+  }
+  section.black-footer .section3 .footer-end .right .txt {
+    font-size: 0.6em;
+  }
+}/*# sourceMappingURL=main.css.map */
