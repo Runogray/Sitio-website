@@ -12,7 +12,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.995);
+    background-color: rgba(0, 0, 0, 0.995);
     position: absolute;
     top: 0;
     left: 0;
@@ -51,7 +51,7 @@
     gap: 2em;
   }
   ul .navb a {
-    color: rgb(7, 7, 7);
+    color: rgb(253, 253, 253);
     text-decoration: none;
     font-family: "Inter";
     font-size: 0.9rem;
@@ -69,7 +69,7 @@
     display: none;
   }
   .heroimg {
-    background-image: url(/images/herobackground.png);
+    background-image: url(/images/herobackground.jpg);
     position: absolute;
     top: 0;
     left: 0%;
@@ -79,16 +79,16 @@
     background-size: contain;
     background-position-x: 20%;
     background-position-y: 20%;
-    height: 60em;
+    height: 50em;
   }
   section.heroimg .mobilehero-img {
     display: none;
   }
   section.hero {
     text-align: center;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     height: 76vh;
-    margin-top: 22vh;
+    margin-top: 10em;
     width: 100%;
   }
   section.hero .H1 {
@@ -105,12 +105,25 @@
     margin-bottom: 3em;
     font-size: 0.8em;
     line-height: 1.3em;
-    color: #232324;
+    color: #ececec;
+  }
+  section.hero .heroimageweb {
+    margin-top: 0;
   }
   section.popular {
-    margin-top: 15em;
+    background-color: #ffffff;
+    position: absolute;
+    top: 46em;
+    left: 0%;
+    right: 0%;
+    width: 78.9em;
+    background-size: contain;
+    background-position-x: 20%;
+    background-position-y: 20%;
+    height: 60em;
   }
   section.popular .content {
+    margin-top: 4em;
     display: flex;
     justify-content: space-between;
     align-items: last baseline;
@@ -284,405 +297,5 @@
     font-family: "Inter";
     width: 8em;
     margin-left: 0em;
-  }
-  section.linear-background .background-img {
-    background-image: url(/Sito-Images/build\ productbackground\(mobile\).svg);
-    position: absolute;
-    top: 120.5em;
-    left: unset;
-    right: 0;
-    width: 100%;
-    z-index: -1;
-    background-size: cover;
-    background-position-x: 20%;
-    background-position-y: 40%;
-    height: 62em;
-  }
-  section.linear-background .content {
-    display: flex;
-    justify-content: space-between;
-    color: #ffffff;
-    margin-top: 3.8em;
-  }
-  section.linear-background .content .left-content {
-    margin-top: 14em;
-    margin-right: 10em;
-    width: 40%;
-  }
-  section.linear-background .content .left-content .text .h1 {
-    margin-top: 0.1em;
-    font-size: 1.8em;
-    font-weight: bold;
-    line-height: 1.4;
-  }
-  section.linear-background .content .left-content .text .h2 {
-    margin-top: 1em;
-    font-size: 0.8em;
-    font-weight: lighter;
-    line-height: 1.4;
-    color: #c1c1c1;
-  }
-  section.linear-background .content .left-content .cta-btns {
-    margin-top: 2em;
-    height: 8em;
-  }
-  section.linear-background .content .left-content .cta-btns .primary-cta {
-    display: flex;
-    justify-content: center;
-    gap: 0.4em;
-    background-color: #3405E1;
-    font-size: 0.8em;
-    font-weight: normal;
-    color: rgb(255, 255, 255);
-    text-decoration: none;
-    border-radius: 2em;
-    padding: 1em 1.4em 1em 1.4em;
-    font-family: "Inter";
-    width: 8em;
-    margin-left: 0em;
-  }
-  section.linear-background .content .right-content {
-    background-color: rgb(0, 0, 0);
-    border-width: 0.1em;
-    border-color: white;
-    border-style: solid;
-    margin-top: 0em;
-    width: 60%;
-    height: 35em;
-    position: relative;
-    padding: 2em 4em 2em 4em;
-  }
-  section.linear-background .content .right-content .mobile {
-    display: none;
-  }
-  section.linear-background .content .right-content .web {
-    display: none;
-  }
-  section.linear-background .sliderweb {
-    position: relative;
-    max-width: 1200px;
-    margin: 8em 0;
-  }
-  section.linear-background .sliderweb .contents {
-    color: #ffffff;
-    position: absolute;
-    bottom: 70%;
-    position: absolute;
-    top: 0;
-    left: 0;
-    background-color: rgba(4, 0, 41, 0.5803921569);
-    padding: 2% 5% 5% 5%;
-    background-size: contain;
-    background-position-x: 20%;
-    background-position-y: 20%;
-    width: 90%;
-    height: 26vh;
-  }
-  section.linear-background .sliderweb .contents .h1 {
-    font-size: 2.2em;
-    line-height: 0.4em;
-  }
-  section.linear-background .sliderweb .photoimgweb .slider {
-    display: flex;
-  }
-  section.why-us .services {
-    text-align: center;
-  }
-  section.why-us .services .H1 {
-    margin-top: 6em;
-    font-size: 1.8em;
-    font-weight: bolder;
-    margin-bottom: 0em;
-  }
-  section.why-us .services .cards {
-    margin-left: 4em;
-    margin-top: 0.2em;
-    display: flex;
-    gap: 2em;
-  }
-  section.why-us .more {
-    margin-top: 7em;
-    display: flex;
-  }
-  section.why-us .more .left {
-    margin-top: 8em;
-  }
-  section.why-us .more .left .text {
-    width: 70%;
-  }
-  section.why-us .more .left .text .h1 {
-    font-size: 1.8em;
-    font-weight: bolder;
-    margin-top: 0.2em;
-  }
-  section.why-us .more .left .text .h2 {
-    font-size: 1em;
-    line-height: 1.4em;
-  }
-  section.why-us .companys {
-    text-align: center;
-    margin-top: 8em;
-  }
-  section.why-us .companys .title {
-    margin-bottom: 3.5em;
-  }
-  section.why-us .companys .title .h1 {
-    font-size: 1.4em;
-    line-height: 0.4;
-    font-weight: bolder;
-  }
-  section.why-us .companys .title .h2 {
-    font-size: 1em;
-    color: rgb(166, 2, 166);
-  }
-  section.template {
-    margin-top: 12em;
-  }
-  section.template .background-img3 {
-    background-image: url(/Sito-Images/templatebackground\(web\).svg);
-    position: absolute;
-    top: 290em;
-    left: unset;
-    right: 0;
-    width: 100%;
-    z-index: -1;
-    background-size: cover;
-    background-position-x: 20%;
-    background-position-y: 40%;
-    height: 60vh;
-  }
-  section.template .texth1 {
-    font-size: 1.4em;
-    color: rgb(0, 0, 0);
-  }
-  section.template .wrapper {
-    display: flex;
-    justify-content: space-between;
-    gap: 3.5em;
-    align-items: center;
-    background-color: rgb(235, 235, 235);
-    position: absolute;
-    border-color: rgb(0, 0, 0);
-    border-width: 0.1em;
-    border-style: solid;
-    top: 298em;
-    left: 0;
-    padding: 3% 6% 5% 7%;
-    background-size: contain;
-    background-position-x: 20%;
-    background-position-y: 20%;
-    width: 86.8%;
-    height: 64vh;
-  }
-  section.template .h1 {
-    font-size: 1.2em;
-    font-weight: 800;
-  }
-  section.template .p1 {
-    font-size: 0.8em;
-    font-weight: 500;
-    line-height: 1.4em;
-    margin-right: 3em;
-  }
-  section.template .button {
-    display: flex;
-    gap: 0.5em;
-  }
-  section.template .button .view {
-    margin-top: 0.2em;
-  }
-  section.template .button .view .text {
-    font-size: 0.9em;
-    line-height: 0.2em;
-    font-weight: 600;
-  }
-  section.template .button .arrow {
-    margin-top: 0.6em;
-  }
-  .footer {
-    margin-left: 5em;
-    position: absolute;
-    background-size: cover;
-    background-position-x: 20%;
-    background-position-y: 40%;
-    background-image: url(/Sito-Images/footerbackground\(web\).svg);
-    height: 13vh;
-    width: 87%;
-    border-radius: 1em;
-    top: -4em;
-    display: flex;
-    padding-top: 1em;
-    padding-bottom: 1em;
-  }
-  .footer .left {
-    color: white;
-    margin-left: 2.5em;
-  }
-  .footer .left .text .h1 {
-    font-size: 1.2em;
-    line-height: 0.8em;
-  }
-  .footer .left .feature {
-    display: flex;
-    justify-content: space-between;
-    gap: 2em;
-  }
-  .footer .left .feature .t1 {
-    display: flex;
-    justify-content: space-between;
-    gap: 0.3em;
-    margin-top: 0em;
-  }
-  .footer .left .feature .t1 .text {
-    font-size: 0.7em;
-    line-height: 0.1em;
-  }
-  .footer .left .feature .t1 .svg {
-    margin-top: 0.3em;
-  }
-  .footer .right {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 2.2em;
-    margin-left: 16em;
-  }
-  .footer .right .primary-ctb {
-    background-color: #000000;
-    background-blend-mode: color-burn;
-    font-size: 0.9rem;
-    font-weight: normal;
-    color: white;
-    text-decoration: none;
-    border-radius: 1em;
-    padding: 0.6em 1.6em 0.6em 1.6em;
-    font-family: "Inter";
-    margin: 2em 1.2em;
-    width: 5.5em;
-  }
-  .footer .right .primary-ctb:hover {
-    color: #afabff;
-    text-decoration: none;
-  }
-  .footer .right .secondary-cta {
-    background-color: #ffffff;
-    background-blend-mode: color-burn;
-    font-size: 0.9rem;
-    font-weight: normal;
-    color: rgb(0, 0, 0);
-    text-decoration: none;
-    border-radius: 1em;
-    padding: 0.6em 1.6em 0.6em 1.6em;
-    font-family: "Inter";
-    margin: 2em 1.2em;
-    width: 5.5em;
-  }
-  .footer .right .secondary-cta:hover {
-    color: #afabff;
-    text-decoration: none;
-  }
-  section.black-footer {
-    background-color: #000000;
-    position: absolute;
-    top: 343em;
-    left: unset;
-    right: 0;
-    width: 100%;
-    z-index: -1;
-    background-size: cover;
-    background-position-x: 20%;
-    background-position-y: 40%;
-    height: 80vh;
-  }
-  section.black-footer .section1 {
-    margin-top: 6em;
-    margin-left: 4em;
-  }
-  section.black-footer .section2 {
-    margin-top: 2em;
-    display: flex;
-    color: white;
-    justify-content: space-between;
-    margin-left: 4em;
-    margin-right: 10em;
-  }
-  section.black-footer .section2 .left {
-    display: flex;
-    justify-content: space-between;
-    gap: 3em;
-    color: white;
-  }
-  section.black-footer .section2 .left .tex1 {
-    margin-left: 0.8em;
-  }
-  section.black-footer .section2 .left .tex1 .h1 {
-    display: flex;
-    gap: 0.2em;
-    margin-left: 0.4em;
-  }
-  section.black-footer .section2 .left .tex1 .h1 .txt {
-    line-height: 0em;
-    font-size: 1em;
-  }
-  section.black-footer .section2 .left .tex1 .wrapper {
-    text-align: left;
-    margin-left: 0.9em;
-    color: rgb(231, 231, 231);
-  }
-  section.black-footer .section2 .left .tex1 .wrapper .tx1 {
-    font-size: 0.8em;
-  }
-  section.black-footer .section2 .right {
-    text-align: left;
-  }
-  section.black-footer .section2 .right .social .text {
-    margin-top: 0em;
-    font-size: 0.8em;
-    line-height: 0.2em;
-  }
-  section.black-footer .section2 .right .social .icon {
-    margin-top: 2em;
-    display: flex;
-    gap: 1em;
-  }
-  section.black-footer .section2 .right .social .icon .ic {
-    padding: 0em 0em;
-  }
-  section.black-footer .section2 .right .contact {
-    margin-top: 4em;
-  }
-  section.black-footer .section2 .right .contact .mail {
-    font-size: 1.2em;
-    line-height: 0.1em;
-  }
-  section.black-footer .section2 .right .contact .no {
-    font-size: 1em;
-    line-height: 0.3em;
-  }
-  section.black-footer .section3 {
-    margin-top: 3.6em;
-  }
-  section.black-footer .section3 .footer-end {
-    text-align: center;
-    margin-left: 5.5em;
-    margin-right: 5.5em;
-    color: rgb(219, 219, 219);
-    display: flex;
-    justify-content: space-between;
-  }
-  section.black-footer .section3 .footer-end .left {
-    display: flex;
-    gap: 1em;
-    font-size: 0.7em;
-    font-weight: lighter;
-  }
-  section.black-footer .section3 .footer-end .right {
-    display: flex;
-    gap: 0.3em;
-  }
-  section.black-footer .section3 .footer-end .right .svg {
-    margin-top: 0.65em;
-  }
-  section.black-footer .section3 .footer-end .right .txt {
-    font-size: 0.6em;
   }
 }/*# sourceMappingURL=main.css.map */
